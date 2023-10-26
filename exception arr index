@@ -1,0 +1,24 @@
+/*write a program to decleare an array int a[]={12,34,56,78,90}, after this take
+ input of index that you want to access if index is neagative
+ or if index is greater than 4 than raise an exception otherwise print elemnet with
+  respect to index*/
+    int main(){
+int arr[]={12,34,56,78,90},i;
+cout<<"enter the index whose value we want to print\n";
+cin>>i;
+try
+{
+    if (i<0 || i>4){
+throw 1;
+    }else
+    cout<<"element with respect to index is "<<arr[i];
+}
+catch(int x)
+{
+    cout<<"invalid index\n";
+
+}
+    }
+//output enter the index whose value we want to print
+3
+element with respect to index is 78
