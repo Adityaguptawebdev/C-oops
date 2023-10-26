@@ -9,7 +9,7 @@ int main(){
     {
         cout<<"enter the number";
         cin>>x;
-        if (x==0, x>100)
+        if (x==0 || x>100)
         throw 1;
         cout<<"x is"<<sqrt(x);
     }
