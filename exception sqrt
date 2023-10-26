@@ -1,0 +1,22 @@
+ //program to calculate square root of a number if number is >100 and
+    // less than 0 than throw an exception
+#include <iostream>
+using namespace std;
+#include <cmath>
+int main(){
+    int x;
+    try
+    {
+        cout<<"enter the number";
+        cin>>x;
+        if (x==0, x>100)
+        throw 1;
+        cout<<"x is"<<sqrt(x);
+    }
+    catch(int x)
+    {
+       cout<<"NA";
+       cout<<"\nrest of code work fine\n";
+    }
+    
+}
