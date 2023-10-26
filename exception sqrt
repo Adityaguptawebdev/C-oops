@@ -11,11 +11,11 @@ int main(){
         cin>>x;
         if (x==0 || x>100)
         throw 1;
-        cout<<"x is"<<sqrt(x);
+        cout<<"x sqrt is"<<sqrt(x);
     }
     catch(int x)
     {
-       cout<<"NA";
+       cout<<"invalid input";
        cout<<"\nrest of code work fine\n";
     }
     
