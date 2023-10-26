@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b,c;
+    cout<<"enter the value of a and b\n";
+    cin>>a>>b;
+    try
+    {
+        if (b==0)
+        throw 1;
+        c=a/b;
+        cout<<"division is"<<c;
+        
+    }
+    catch(int x)
+    {
+        cout<<"divide by zero is not possible\n";
+
+    }
+      cout<<"rest of the program work fine\n";
+    
+}
+/*output
+enter the value of a and b
+12
+0
+divide by zero is not possible
+rest of the program work fine
+*/
