@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+// Calculates the sum of the divisors of a given integer 'n'
+void sumOfDivisors(int n, int& sum) {
+    // Initialize the sum to 0
+    sum = 0;
+
+    // Iterate from 1 to 'n', checking if 'n' is divisible by each value of 'i'
+    for (int i = 1; i <= n; ++i) {
+        if (n % i == 0) {
+            // If 'n' is divisible by 'i', add 'i' to the sum
+            sum += i;
+        }
+    }
+}
+int main() {
+    int N, divSum;
+
+    // Read an integer 'N' from the standard input
+    cin >> N;
+
+    // Calculate the sum of divisors for 'N' and store it in 'divSum'
+    sumOfDivisors(N, divSum);
+
+    // Print the sum of divisors to the standard output
+    cout << divSum << endl;
+
+    return 0;
+}
